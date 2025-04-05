@@ -1,0 +1,27 @@
+name: PrimeraEntrega  
+
+on:
+  push:                   
+    branches:
+      - main           
+  pull_request: {}        
+
+jobs:
+  imprimir_info:          
+    runs-on: ubuntu-latest  
+
+    steps:
+      - uses: actions/checkout@v3  
+
+      - name: Imprimir Mensaje Personalizado
+        run: |
+          echo "Hola, soy Juan Pérez y este es mi primer workflow!"  # 4. Reemplaza 'Juan Pérez' por tu nombre completo.
+          echo "La fecha y hora actual es: $(date)"  # 5. Comando para mostrar la fecha y hora actual
+
+      - name: Configurar Python
+        uses: actions/setup-python@v3
+        with:
+          python-version: '3.9'  
+
+      - name: Ejecutar script Python
+        run: python script.py  
