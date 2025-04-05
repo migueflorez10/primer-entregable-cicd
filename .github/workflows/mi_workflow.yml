@@ -1,4 +1,4 @@
-name: PrimeraEntrega  
+name: Primera Entrega  
 
 on:
   push:                   
@@ -15,8 +15,9 @@ jobs:
 
       - name: Imprimir Mensaje Personalizado
         run: |
-          echo "Hola, soy Juan Pérez y este es mi primer workflow!"  # 4. Reemplaza 'Juan Pérez' por tu nombre completo.
-          echo "La fecha y hora actual es: $(date)"  # 5. Comando para mostrar la fecha y hora actual
+          echo "Hola, soy Miguel Angel y este es mi primer workflow!"  
+          echo "La fecha y hora actual es: $(LC_TIME=es_ES.UTF-8 date +"%-d de %B de %Y, %H:%M:%S")"
+
 
       - name: Configurar Python
         uses: actions/setup-python@v3
