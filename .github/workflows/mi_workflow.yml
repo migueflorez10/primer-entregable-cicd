@@ -15,7 +15,7 @@ jobs:
 
       - name: Imprimir Mensaje Personalizado
         run: |
-          echo "Hola, soy Miguel Angel y este es mi primer workflow!"  
+          echo "Hola, somos Miguel Angel y Samuel Cardenas, y este es nuestro primer workflow!"  
           echo "La fecha y hora actual es: $(LC_TIME=es_ES.UTF-8 date +"%-d de %B de %Y, %H:%M:%S")"
 
 
