@@ -24,4 +24,4 @@ jobs:
           python-version: '3.9'  
 
       - name: Ejecutar script Python
-        run: python script.py  
+        run: python mi_script.py 
